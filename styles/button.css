@@ -8,9 +8,9 @@
     background: lightgray;
     border-radius: 30px;
     outline: none;
-    cursor: pointer;
     appearance: none;
 }
+
 .toggle-button2:before {
     content: "";
     display: inline-block;
@@ -23,9 +23,11 @@
     border-radius: 50%;
     transition: 0.2s;
 }
+
 .toggle-button2:checked {
-    background: darkslategrey;
+    background: rgb(45, 45, 70);
 }
+
 .toggle-button2:checked:before {
     left: 21px;
     transition: 0.2s;

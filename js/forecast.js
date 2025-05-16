@@ -1,5 +1,5 @@
 export class Forecast {
-    constructor({ name, main, weather }) {
+    constructor({name, main, weather}) {
         this.name = name;
         this.temp = main.temp;
         this.description = weather[0].description;

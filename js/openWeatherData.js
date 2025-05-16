@@ -5,11 +5,17 @@ const dataCities = {
         5128638,
     ]
 }
+// toggle event
+
+// let unit = document.getElementById('toggle-button2').checked ? 'imperial' : 'metric'
+
 
 class DataService {
     #baseUrl = 'https://api.openweathermap.org/data/2.5/';
     #appId = 'aa30222d1e6315a79fdb74174663269d'
     #unit = 'metric'
+
+    // #unit = unit
 
     async getWeatherForecast(citiId) {
         const url = `${this.#baseUrl}weather?id=${citiId}&appid=${this.#appId}&units=${this.#unit}`
@@ -23,6 +29,7 @@ class DataService {
         }
     }
 }
+
 const dataService = new DataService()
 
 export {dataService, dataCities}

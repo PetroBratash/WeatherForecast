@@ -1,6 +1,6 @@
 import {ForecastListView} from './forecastListView.js'
 import {Forecast} from './forecast.js'
-import {dataService, dataCities } from './openWeatherData.js'
+import {dataService, dataCities} from './openWeatherData.js'
 
 window.addEventListener('DOMContentLoaded', () => {
     console.log('DOMContentLoaded')
