@@ -1,4 +1,4 @@
-.toggle-button2 {
+.toggle-button {
     position: relative;
     display: inline-block;
     width: 40px;
@@ -11,7 +11,7 @@
     appearance: none;
 }
 
-.toggle-button2:before {
+.toggle-button:before {
     content: "";
     display: inline-block;
     position: absolute;
@@ -24,11 +24,11 @@
     transition: 0.2s;
 }
 
-.toggle-button2:checked {
+.toggle-button:checked {
     background: rgb(45, 45, 70);
 }
 
-.toggle-button2:checked:before {
+.toggle-button:checked:before {
     left: 21px;
     transition: 0.2s;
 }
