@@ -7,8 +7,12 @@ const dataCities = {
 }
 // toggle event
 
-// let unit = document.getElementById('toggle-button2').checked ? 'imperial' : 'metric'
-
+let unit =  'metric'
+const togglebutton = document.getElementById('toggle-button');
+togglebutton.addEventListener('change', () => {
+    unit = togglebutton.checked ? 'imperial' : 'metric';
+    console.log(unit);
+})
 
 class DataService {
     #baseUrl = 'https://api.openweathermap.org/data/2.5/';
