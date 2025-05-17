@@ -8,7 +8,6 @@ const dataCities = {
     ]
 }
 // toggle event
-
 let unit = 'metric'
 let forecastListView;
 
