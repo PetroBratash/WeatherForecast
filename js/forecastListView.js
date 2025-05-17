@@ -10,4 +10,8 @@ export class ForecastListView {
     showForecast(item) {
         this.#forecastTableBody.append(item.createElement())
     }
+
+    clearForecasts() {
+        this.#forecastTableBody.innerHTML = '';
+    }
 }
